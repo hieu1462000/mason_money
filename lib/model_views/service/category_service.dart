@@ -53,9 +53,6 @@ class CategoryService extends ChangeNotifier {
 
   void getListProductFromApi(ListProductParams listProductParams) async {
     final response = await productRepositories.getListProduct(listProductParams);
-    if (response.status == 200 && response.data != null) {
-      print("Successful");
-    };
 
 }
 
